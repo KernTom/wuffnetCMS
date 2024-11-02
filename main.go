@@ -6,15 +6,17 @@ import (
 	"net/http"
 	"wuffnetCMS/config"
 	"wuffnetCMS/routes"
+
+	"github.com/joho/godotenv"
 )
 
 func init() {
 	// Lädt die .env Datei
-	/*	err := godotenv.Load(".env")
-		if err != nil {
-			log.Fatalf("Fehler beim Laden der .env Datei: %v", err)
-		}
-	*/
+	err := godotenv.Load(".env")
+	if err != nil {
+		log.Fatalf("Fehler beim Laden der .env Datei: %v", err)
+	}
+
 }
 
 func main() {
