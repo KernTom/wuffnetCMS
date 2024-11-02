@@ -1,0 +1,23 @@
+<div id="editModal" class="modal editModal">
+    <div class="modal-content">
+        <h4 id="modal-title">
+            <span class="schema-table-name" id="schema-table-name"></span>
+            <span id="action-text"></span>
+        </h4>
+        <div class="modal-body">
+            <form id="editForm">
+                <div id="form-fields">
+                    <!-- Dynamische Felder werden hier eingefügt -->
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="modal-close btn red" onclick="closeModal()">Abbrechen</button>
+        <button class="btn" onclick="submitForm()">Speichern</button>
+    </div>
+</div>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/css/medium-editor.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/css/themes/default.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/medium-editor/5.23.3/js/medium-editor.min.js"></script>
